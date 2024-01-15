@@ -10,6 +10,7 @@ namespace BethanysPieShopTests.TagHelpers
 		[Fact]
 		public void Generates_Email_Link()
 		{
+			// Arrange
 			EmailTagHelper emailTagHelper = new EmailTagHelper() { Address = "test@bethanyspieshop.com", Content = "Email" }; ;
 
 			var tagHelperContext = new TagHelperContext(
